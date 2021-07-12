@@ -15,7 +15,7 @@ steps:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
 
-- script: |
+- script:
     npm ci
   displayName: 'npm install'
   
