@@ -3,9 +3,12 @@
 import login from '../support/pages/login'
 
 context('Cadastrar', () => {
+    beforeEach(() => {
+        login.acessarLogin();
+    });
     it('Cadastrar um novo usuário', () => {
-       login.acessarLogin()
        login.preencherFormulario()
-        login.submeterFromulario()
+       login.submeterFromulario()
+       login.verificarSeLogarComSucesso()
     });
 });

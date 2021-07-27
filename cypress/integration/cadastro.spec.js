@@ -1,15 +1,14 @@
 /// <reference types="cypress"/>
-
+import cadastro from '../support/pages/cadastro/'
 const faker = require('faker');
 
 context('Cadastrar', () => {
+    beforeEach(() => {
+        cadastro.acessarRegister();
+    });
     it('Cadastrar um novo usuário', () => {
-        cy.visit('register');
-        cy.get('input[ng-model*=username]').type(faker.name.firstName() + " " +faker.name.lastName());
-        cy.get('input[ng-model*=email]').type(faker.internet.email());
-        cy.get('input[ng-model*=password]').type('12345678');
-        cy.get('button.btn-primary').click();
-
-        
+        cadastro.preencherFormulario()
+        cadastro.subimeterCadastro()
+        cadastro.verificarSeCadastroFoiCriadaComSucesso()       
     });
 });

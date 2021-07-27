@@ -3,8 +3,9 @@
     "baseUrl":"https://demo.realworld.io/#/",
     "apiUrl": "https://conduit.productionready.io/api/",
     "user": {
-        "email":"agilizei-rwc@mail.com",
+        "image": "https://i.pinimg.com/originals/d4/b1/8f/d4b18f5de5be1f2bfd432f5cf5607fbe.png",
+        "userName": "Mirian RWC",
+        "email":"mirian.f-agilizei-rwc@mail.com",
         "password": "12345678"
     }
-    
 }

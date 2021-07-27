@@ -7,16 +7,16 @@ class articles {
     acessarFormularioDeNovaPublicacao(){
         cy.get(el.linkNovaPublicacao).click();
     }
+
     preencherFormulario(){
         cy.get(el.inputTitle).type('Agilizei Titulo');
         cy.get(el.inputDescription).type('Agilizei Descricao');
         cy.get(el.textAreaContext).type(faker.lorem.paragraph());
-        cy.get(el.inputTagField).type('cypress');
+        cy.get(el.inputTagField).type('cypress').type('{enter}');
     }
     
     subimeterPublicacao(){
         cy.get(el.buttonSubmit).click();
-        
     }
 
     verificarSeAPublicacaoFoiCriadaComSucesso(){
