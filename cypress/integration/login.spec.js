@@ -2,11 +2,11 @@
 
 import login from '../support/pages/login'
 
-context('Cadastrar', () => {
+context('Login', () => {
     beforeEach(() => {
         login.acessarLogin();
     });
-    it('Cadastrar um novo usuário', () => {
+    it('Logar com sucesso', () => {
        login.preencherFormulario()
        login.submeterFromulario()
        login.verificarSeLogarComSucesso()

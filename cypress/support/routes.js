@@ -11,7 +11,6 @@ class Routes {
         putUser: 'PUTUser',
         getProfiles: 'GETProfiles',
         getArticlesAuthor: 'GETArticlesAuthor'
-
     }
     
     init(){

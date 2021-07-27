@@ -14,7 +14,7 @@ class cadastro{
         cy.get(el.inputPassword).type('12345678');
     }
     
-    subimeterCadastro(){
+    submeterCadastro(){
         cy.get(el.buttonSubmit).click();
         
     }
@@ -30,7 +30,7 @@ class cadastro{
         
         cy.wait(`@${Routes.as.getFeed}`).then((getFeedResponse) => {
             expect(getFeedResponse.status).to.eq(200)
-        })
+        })  
     }
 
 }

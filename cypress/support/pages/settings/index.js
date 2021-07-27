@@ -19,20 +19,19 @@ class settings {
     }
 
     verificarSeAlteracaoAsSettingsComSucesso(){
-        // cy.wait(`@${Routes.as.getUser}`).then((getUserResponse) => {
-        //     expect(getUserResponse.status).to.eq(200)
-        // })
+        cy.wait(`@${Routes.as.getUser}`).then((getUserResponse) => {
+            expect(getUserResponse.status).to.eq(200)
+        })
 
         
-        // cy.wait(`@${Routes.as.putUser}`).then((putUserResponse) => {
-        //     expect(putUserResponse.status).to.eq(200)
-        // })
+        cy.wait(`@${Routes.as.putUser}`).then((putUserResponse) => {
+            expect(putUserResponse.status).to.eq(200)
+        })
         
-        // cy.wait(`@${Routes.as.getArticlesAuthor}`).then((getArticlesAuthorResponse) => {
-        //     expect(getArticlesAuthorResponse.status).to.eq(200)
-        // })
+        cy.wait(`@${Routes.as.getArticlesAuthor}`).then((getArticlesAuthorResponse) => {
+            expect(getArticlesAuthorResponse.status).to.eq(200)
+        })
 
-        //erro
         cy.wait(`@${Routes.as.getProfiles}`).then((getProfilesResponse) => {
             expect(getProfilesResponse.status).to.eq(200)
         })

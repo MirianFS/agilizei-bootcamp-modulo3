@@ -3,7 +3,7 @@ export const ELEMENTS = {
     linkMenuHome: '[show-authed="true"] [href="#/"]',
     linkMenuNewArticles: '[href="#/editor/"]',
     linkMenuSettings:'[href="#/settings"]',
-    linkMenuPerfil: '[href="#/@Agilizei%20RWC"]',
+    linkMenuPerfil: '[href="#/@Mirian%20RWC"]',
     linkMenuYourFeed: '[class="feed-toggle"] [class= "nav-link active"]',
     linkMenuGlobalFeed: '[class="feed-toggle"] [class= "nav-link"]',
     divArticlePreview: '[class="article-preview"]',

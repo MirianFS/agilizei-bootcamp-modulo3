@@ -10,7 +10,7 @@ class home {
         cy.get(el.linkMenuHome).should('contain.text', 'Home');
         cy.get(el.linkMenuNewArticles).should('contain.text', 'New Article');
         cy.get(el.linkMenuSettings).should('contain.text', 'Settings');
-        cy.get(el.linkMenuPerfil).should('contain.text', 'Agilizei RWC');
+        cy.get(el.linkMenuPerfil).should('contain.text', 'Mirian RWC');
         cy.get(el.linkMenuYourFeed).should('contain.text', 'Your Feed');
         cy.get(el.linkMenuGlobalFeed).should('contain.text','Global Feed');
         cy.get(el.divArticlePreview).should('contain.text', 'No articles are here... yet.');

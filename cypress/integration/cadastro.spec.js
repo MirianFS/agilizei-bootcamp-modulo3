@@ -8,7 +8,7 @@ context('Cadastrar', () => {
     });
     it('Cadastrar um novo usuário', () => {
         cadastro.preencherFormulario()
-        cadastro.subimeterCadastro()
+        cadastro.submeterCadastro()
         cadastro.verificarSeCadastroFoiCriadaComSucesso()       
     });
 });

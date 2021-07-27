@@ -18,7 +18,7 @@ Cypress.Commands.add('backgroundLogin', () => {
         url: `${Cypress.config().apiUrl}users/login`,
         body: {
             user: {
-            email: "agilizei-rwc@mail.com",
+            email: "mirian.f-agilizei-rwc@mail.com",
             password: "12345678"
             }
         }

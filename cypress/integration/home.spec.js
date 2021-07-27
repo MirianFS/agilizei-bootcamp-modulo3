@@ -2,7 +2,7 @@
 
 import home from '../support/pages/home'
 
-context('Cadastrar', () => {
+context('Home', () => {
     beforeEach(() => {
         cy.backgroundLogin();
     });
